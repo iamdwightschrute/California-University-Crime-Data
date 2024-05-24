@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>California Campus Crime Report</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+    </head>
+<body>
+    <header>
+        <h1>2015 California Campus Crime Report</h1>
+    </header>
+    <section id="introduction">
+        <p>This report utilizes data encompassing crime statistics from various campuses across California, providing insights into patterns and correlations related to crime on university campuses. The data used includes violent crimes, property crimes, student enrollment numbers, and specific types of crimes such as burglary and larceny-theft. The analysis performed utilizes various graphical representations to depict the distribution and nature of campus crimes, helping to understand the scale and types of criminal activities affecting these institutions.</p>
+    </section>
+
+    <!-- Bar Chart -->
+    <section id="barChartSection">
+        <h2>Violent Crimes by Campus</h2>
+        <p>This bar chart displays the total number of violent crimes reported by each University of California campus.</p>
+        <div id="barChart"></div> <!-- Container for the bar chart -->
+        <p>Findings: </p>
+        <p>The graph provides a comparative view of violent crime occurrences across campuses, revealing which locations experience higher rates. This helps in identifying campuses with significant safety concerns and potentially guides resource allocation for crime prevention and safety measures.</p>
+    </section>
+
+    <!-- Pie Chart -->
+    <section id="pieChartSection">
+        <h2>Pie Chart of Crime Types per Campus(University of California and California State University)</h2>
+        <p>Pie chart showing the proportion of different types of crimes at San Jose campus.</p>
+        <p>Select a campus to view the distribution of different types of crimes.</p>
+        <select id="campusSelect"></select> <!-- Dropdown for selecting a campus -->
+        <div id="pieChart"></div> <!-- Container for the pie chart -->
+        <p>Findings: </p>
+        <p>This visualization breaks down crime types at San Jose campus, highlighting a predominant prevalence of larceny-theft, which constitutes 84.6% of the crimes. Such data can prioritize focus areas for campus security measures and student safety initiatives.</p>
+    
+    </section>
+
+
+    <!-- Stacked Bar Chart for Categories of Crime -->
+    <section id="stackedBarChartSection">
+        <h2>Crime Composition by Campus</h2>
+        <p>Bar chart comparing violent and property crime counts across various campuses.</p>
+        <div id="stacked-bar-chart"></div> <!-- Container for the stacked bar chart -->
+        <p>Findings: </p>
+        <p>This chart details the composition of crimes at different campuses, distinguishing between property and violent crimes. It allows for a nuanced understanding of the campus environments, showing how crime types vary significantly across different locations, which is crucial for targeted prevention strategies.</p>
+    
+    </section>
+    
+    <!-- Correlation Matrix -->
+    <section id="correlationMatrix">
+        <h2>Correlation Matrix of Campus Crime Data</h2>
+        <p>Visual representation of the correlation coefficients between different crime metrics and student enrollment.</p>
+        <div id="correlationMatrix"></div>
+        <p>Findings: </p>
+        <p> The correlation matrix reveals a strong positive relationship between student enrollment and both property and violent crimes across universities. Specifically, property crime exhibits a very high correlation of 0.98, and violent crime shows a similarly strong correlation of 0.96 with student enrollment. This suggests that higher student populations may be associated with increased incidences of these crimes at universities.</p>
+    </section>
+    
+    <!-- Histogram of Crime Frequency -->
+    <section id="histogramSection">
+        <h2>Histogram of Larceny-Theft Crimes</h2>
+        <p>Histogram showing the distribution of larceny-theft crime counts across various campuses.</p>
+        <div id="histogram"></div> <!-- Container for the histogram -->
+        <p>Findings: </p>
+        <p>This histogram delineates the frequency distribution of larceny-theft incidents across campuses, which helps in identifying crime hotspots and can be used to deploy specific anti-theft measures and awareness programs at campuses with higher occurrences. </p>
+        
+    </section>
+
+
+
+    <footer>
+        <p>Data sourced from the <a href="https://ucr.fbi.gov/crime-in-the-u.s/2015/crime-in-the-u.s.-2015" target="_blank">Uniform Crime Reporting (UCR) Program</a>.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

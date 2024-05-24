@@ -1,0 +1,74 @@
+/* Reset margins and paddings for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply sans-serif font to the entire body */
+body {
+    font-family: sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+h1, h2, h3{
+    margin-top: 10px; /* Add space above headings and paragraphs */
+    margin-bottom: 10px;
+}
+
+p{
+    margin-top: 10px; /* Add space above headings and paragraphs */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Style the main content area */
+main {
+    padding: 2rem;
+}
+
+/* Style the sections */
+section {
+    margin: 20px auto;
+    padding: 10px;
+    border: 10px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 80%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Style the chart container */
+.chart-container {
+    width: 100%; /* Full container width */
+    height: 500px; /* Appropriate height for the chart */
+    padding: 0;
+    margin: auto;
+    display: block;
+}
+
+/* Style the footer */
+footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 1rem;
+    text-align: center; /* Centers the content horizontally */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers items horizontally in flex container */
+    align-items: center; /* Centers items vertically in flex container */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px; /* Optional: Adds a small gap between text and link */
+}

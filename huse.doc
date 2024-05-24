@@ -1,0 +1,83 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background: #003366;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none; /* Optional: Removes underline from links */
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    background: white;
+}
+
+#campusSelect {
+    display: block; /* Makes the dropdown block-level to take full width of its container */
+    width: 50%; /* Adjust width as necessary */
+    margin: 10px auto; /* Centers the dropdown horizontally */
+    padding: 5px;
+    font-size: 16px; /* Increases font size for better readability */
+}
+
+/* Specific styles for visualization sections */
+#barChart, #pieChart, #stackedBarChart {
+    width: 100%; /* Ensures the div takes the full width of the section */
+    height: 500px; /* Sets a fixed height for SVG containers */
+    margin: auto; /* Centers the containers */
+    display: block; /* Ensures the divs are block-level elements */
+}
+
+/* Additional styles for SVGs inside the visualization containers */
+svg {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    display: block; /* Ensures SVG is a block-level element */
+}
+
+/* Style for legends or additional descriptive elements */
+.legend {
+    font-size: 12px; /* Adjust based on your preference */
+    color: #333; /* Dark grey for readability */
+}
+
+#heatMap {
+    width: 100%; /* Ensures the div takes the full width of the section */
+    height: 600px; /* Sets a fixed height for SVG containers */
+    margin: auto; /* Centers the containers */
+    display: block; /* Ensures the divs are block-level elements */
+}
+
+#scatterPlot {
+    width: 100%; /* Ensures the div takes the full width of the section */
+    height: 500px; /* Sets a fixed height for SVG containers */
+    margin: auto; /* Centers the containers */
+    display: block; /* Ensures the divs are block-level elements */
+}
+
+#histogram {
+    width: 100%; /* Ensures the div takes the full width of the section */
+    height: 500px; /* Sets a fixed height for SVG containers */
+    margin: auto; /* Centers the container */
+    display: block; /* Ensures the divs are block-level elements */
+}
+
+#bubbleChart {
+    width: 100%; /* Ensures the div takes the full width of the section */
+    height: 600px; /* Sets a fixed height for SVG containers */
+    margin: auto; /* Centers the container */
+    display: block; /* Ensures the divs are block-level elements */
+}
